@@ -33,9 +33,9 @@ path | description
 /import | import data from CSV file. Expect file to be put in `data`
 /patient/count | return a number patients records
 /patient/list  | return a full list of patients (with scheduled emails if any)
-/patient/listMissingFirstName | return a list of patients where email address is missing but consent is Y
-/patient/listWithConsentAndNoEmail | return list of patients with consent = true and with no email shcheduled for all days in cadence
-
+/patient/listMissingFirstName | return list of patients where with missing first name
+/patient/listWithConsentAndNoEmail | return a list of patients where email address is missing but consent is Y
+/patient/verifyEmailsForConsented | return list of patients with consent = true and with no email shcheduled for all days in cadence
 
 ## TODO
 
