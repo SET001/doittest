@@ -46,4 +46,5 @@ There are some thing to improve which are out of scrope for this test-task:
 - error handling
 - move credentials to env file
 - use volume to store database file on host-machine
-- bulk methods for import
+- use bulk methods for import
+- use eslint
