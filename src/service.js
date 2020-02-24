@@ -69,14 +69,4 @@ const reset = async ()=> {
   }
 };
 
-  
-
-
-// const withConsentAndNoEmail = filter((item)=> item.consent === 'Y' && !item.email )
-// const withNoFirstName = filter((item)=> !item.firstName )
-
-// console.log(withConsentAndNoEmail(formatedRows))
-// console.log(withNoFirstName(formatedRows))
-
-
 module.exports = {parseCSV, importData, list, listMissingFirstName, listWithConsentAndNoEmail, reset}
