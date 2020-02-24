@@ -30,7 +30,7 @@ path | description
 -----|--------
 /health | should respond with 'OK' if service is running
 /reset | remove all data from DB
-/import | import data from CSV file. Expec
+/import | import data from CSV file. Expect file to be put in `data`
 /patient/count | return a number patients records
 /patient/list  | return a full list of patients (with scheduled emails if any)
 /patient/listMissingFirstName | return a list of patients where email address is missing but consent is Y
@@ -46,3 +46,4 @@ There are some thing to improve which are out of scrope for this test-task:
 - error handling
 - move credentials to env file
 - use volume to store database file on host-machine
+- bulk methods for import

@@ -19,7 +19,6 @@
     "csv-parse": "^4.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
-    "migrate": "^1.6.2",
     "mongoose": "^5.9.1",
     "ramda": "^0.27.0"
   },
