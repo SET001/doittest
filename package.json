@@ -1,0 +1,29 @@
+{
+  "name": "doittest",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "health": "curl -X POST doittest.localhost/health",
+    "import": "curl -X POST -H \"Content-Type: multipart/form-data\" -F \"data=@./misk/data1.csv\" doittest.localhost/import",
+    "list": "curl -X POST doittest.localhost/patient/list",
+    "count": "curl -X POST doittest.localhost/patient/count",
+    "reset": "curl -X POST doittest.localhost/reset",
+    "listMissingFirstName": "curl -X POST doittest.localhost/patient/listMissingFirstName",
+    "listWithConsentAndNoEmail": "curl -X POST doittest.localhost/patient/listWithConsentAndNoEmail",
+    "verifyEmailsForConsented": "curl -X POST doittest.localhost/patient/verifyEmailsForConsented"
+  },
+  "author": "SET001",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^4.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "migrate": "^1.6.2",
+    "mongoose": "^5.9.1",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "pm2": "^4.2.3"
+  }
+}
